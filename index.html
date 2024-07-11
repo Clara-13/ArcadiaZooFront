@@ -7,49 +7,83 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="scss/main.css"/>
+     <link rel="stylesheet" href="scss/main.scss"/>
     <title> Arcadia Zoo</title>
 </head>
 <body>
-    <header> 
-        <header>
-            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="/">Arcadia Zoo</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" href="/">Accueil</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/Services">Services</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Habitats</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Mon compte</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Connexion</a>
-                      </li>
-                    </ul>
-                  </div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Arcadia Zoo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link" href="/">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/Services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Habitats</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Mon compte</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Connexion</a>
+                    </li>
+                </ul>
                 </div>
-              </nav>
-        </header>
+            </div>
+            </nav>
     </header>
+
 
     <main id="main-page">
         <!-- Le contenu de la page sera injecté ici-->
+         
+      
     </main>
 
-    <footer> Le footer de mon site</footer>
+    <footer class="bg-dark text-white text-center footer">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <h3 class="text-light">Nos horaires</h3>
+                <p>Lundi  au vendredi  09:30-19:30 <br/>
+                Samedi et dimanche 09:00-20h00 <br/>
+
+                </p>
+            </div>
+            <div class="col-6 col-lg-4">
+                <h3  class="text-light">Adresse</h3>
+                <p>Arcadia Zoo, <br/>
+                    Route de la Forêt <br/>
+                    56430 Paimpont <br/>
+                    Bretagne, France <br/>
+                </p>
+                <br/>
+                
+                <h3> Arcadia Zoo</h3>
+                <p class="fs-6">
+                    © 2024 Zoo Arcadia. Tous droits réservés.    
+                </p>
+                    
+            
+            </div>
+            <div class="col-6 col-lg-4">
+                <h3 class="text-light"> Contact</h3>
+                <p>Telephone: +33 1 23 45 67 89 <br/>
+                    Email: info@zooarcadia.com</p>
+            </div>
+        </div>
+    </footer>
+    
 
     <script type="module" src="Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
