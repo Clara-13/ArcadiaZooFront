@@ -11966,19 +11966,38 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html {
-  position: relative;
-  min-height: 100%;
+/*
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+main{
+    margin-bottom:290px;
+}
+footer.footer{
+    padding: 10px;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+*/
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-  margin-bottom: 290px;
+  flex: 1;
 }
 
 footer.footer {
   padding: 10px;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 
@@ -11987,10 +12006,10 @@ p {
   font-size: 18px;
 }
 
-.hero-scene {
+.hero-scene-home {
   position: relative;
 }
-.hero-scene::before {
+.hero-scene-home::before {
   content: "";
   position: absolute;
   top: 0;
@@ -12001,10 +12020,10 @@ p {
   background-size: cover;
   filter: brightness(0.3);
 }
-.hero-scene * {
+.hero-scene-home * {
   position: relative;
 }
-.hero-scene .hero-scene-content {
+.hero-scene-home .hero-scene-content {
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -12012,7 +12031,32 @@ p {
   justify-content: center;
 }
 
-#alligator, #perroquet, #lion {
+.hero-scene-habitats {
+  position: relative;
+}
+.hero-scene-habitats::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/zèbre\ prochebis.jpg);
+  background-size: cover;
+  filter: brightness(0.3);
+}
+.hero-scene-habitats * {
+  position: relative;
+}
+.hero-scene-habitats .hero-scene-content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#alligator, #perroquet, #lion, #chimpanzé, #tigre, #suricate, #girafe, #aigrette, #castor {
   height: 200px;
   width: 200px;
 }
@@ -12053,4 +12097,24 @@ p {
 
 .d-none {
   display: none;
+}
+
+img.tropicalia, img.terre-lion, img.eden-aquatique {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.list-centered {
+  display: inline-block;
+  text-align: left;
+  list-style-position: inside;
+  padding: 0;
+}
+.list-centered li {
+  text-align: center;
+  list-style-position: inside;
 }/*# sourceMappingURL=main.css.map */

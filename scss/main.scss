@@ -1,7 +1,7 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import 'custom';
 
-
+/*
 html{
     position: relative;
     min-height: 100%;
@@ -16,13 +16,32 @@ footer.footer{
     bottom: 0;
     width: 100%;
 }
+*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer.footer {
+    padding: 10px;
+    width: 100%;
+}
 
 p{
     font-family: $font-family-serif;
     font-size: 18px;
 }
 
-.hero-scene {
+.hero-scene-home {
     position:relative;
 
     &::before{
@@ -51,7 +70,36 @@ p{
     }
 }
 
-#alligator, #perroquet, #lion {
+.hero-scene-habitats {
+    position:relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/zèbre\ prochebis.jpg);
+        background-size: cover;
+        filter: brightness(0.3);
+    }
+
+    *{
+        //positionner les éléments devant le :: before
+        position: relative;
+    }
+
+    .hero-scene-content {
+        height: 300px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+    }
+}
+
+#alligator, #perroquet, #lion, #chimpanzé, #tigre, #suricate, #girafe, #aigrette, #castor{
     height: 200px;
     width: 200px;
 }
@@ -95,4 +143,25 @@ p{
 
 .d-none {
     display: none;
+}
+
+img.tropicalia, img.terre-lion, img.eden-aquatique  {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; // Adjust the maximum height to fit within a reasonable size
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.list-centered {
+    display: inline-block;
+    text-align: left; // Text align left to keep the bullets aligned
+    list-style-position: inside; // Ensure bullets are inside the container
+    padding: 0; // Remove default padding
+
+    li {
+        text-align: center; // Center text within the list items
+        list-style-position: inside; // Ensure bullets are inside the container
+    }
 }
