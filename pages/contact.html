@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <div class="hero-scene-home text-center text-white p-4">
     <div class="hero-scene-content">
-        <h1> Connexion</h1>  
+        <h1> Contactez-nous !</h1>  
     </div>
 </div>
 <section class="bg-secondary p-4">
     <div class="container rounded bg-black p-4 ml-4 mt-3 mb-3 text-white">
         <form>
             <div class="mb-3">
+                <label for="TitleInput" class="form-label"> Titre</label>
+                <textarea class="form-control" id="TitleInput" rows="1" placeholder="Exemple: Anniversaire"></textarea>
+            </div>
+            <div class="mb-3">
             <label for="EmailInput" class="form-label">Email</label>
             <input type="email" class="form-control" id="EmailInput" placeholder="abcd@mail.fr" name="Email"> 
             </div>
             <div class="mb-3">
-            <label for="PasswordInput" class="form-label">Mot de passe</label>
-            <input type="password" class="form-control" id="PasswordInput" name="Password">
+                <label for="MessageInput" class="form-label"> Votre message</label>
+                <textarea class="form-control" id="MessageInput" rows="3" placeholder="Rédigez votre message..."></textarea>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">Connexion</button>
+                <button type="submit" class="btn btn-primary"> Envoyer </button>
             </div>
         </form>
     </div>
