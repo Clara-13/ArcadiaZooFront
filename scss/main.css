@@ -12106,7 +12106,7 @@ p {
   justify-content: center;
 }
 
-#alligator, #perroquet, #lion, #chimpanzé, #tigre, #suricate, #girafe, #aigrette, #castor {
+#alligator, #perroquet, #lion, #chimpanzé, #tigre, #suricate, #girafe, #aigrette, #castor, .animal {
   height: 200px;
   width: 200px;
 }
