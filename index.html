@@ -87,5 +87,23 @@
 
     <script type="module" src="Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('add-review-btn').addEventListener('click', function() {
+            document.getElementById('review-form').classList.toggle('d-none');
+        });
+    
+        document.getElementById('submit-review-btn').addEventListener('click', function() {
+            const pseudo = document.getElementById('pseudo').value;
+            const reviewText = document.getElementById('review-text').value;
+    
+            if (pseudo && reviewText) {
+                // Vous pouvez ajouter ici le code pour envoyer l'avis au serveur
+                alert('Merci pour votre avis !');
+                document.getElementById('review-form').classList.add('d-none');
+            } else {
+                alert('Veuillez remplir tous les champs.');
+            }
+        });
+    </script>
 </body>
 </html>

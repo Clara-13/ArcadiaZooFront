@@ -12012,22 +12012,45 @@ p {
   justify-content: center;
 }
 
-#alligator {
+#alligator, #perroquet, #lion {
   height: 200px;
   width: 200px;
 }
 
-#lion {
-  height: 200px;
-  width: 200px;
+.service-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  margin: 0 auto;
+  display: block;
 }
 
-#perroquet {
-  height: 200px;
-  width: 200px;
+.client-reviews .review {
+  background-color: #4A9C4D !important;
+  border: 1px solid #64b567;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.client-reviews .carousel-control-prev-icon,
+.client-reviews .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
 }
 
-#petit-train #restaurant #guide {
-  height: 200px;
-  width: 200px;
+.review-form {
+  background-color: #4A9C4D;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#add-review-btn {
+  margin-top: 20px;
+}
+
+.d-none {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

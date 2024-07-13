@@ -23,7 +23,7 @@
             <div class="row row-cols-3 align-items-center">
                 <div class="col-12 col-lg-4">
                     <div class="text-center">
-                        <img class="rounded-circle img-fluid" src="../images/perroquet ara rouge proche.jpg" alt="lion" id="perroquet"/>
+                        <img class="rounded-circle img-fluid" src="../images/perroquet ara rouge proche.jpg" alt="perroquet" id="perroquet"/>
                       </div>
                     <h2 class="text-center text-light"> Jungle </h2>
                     <p class="text-center">
@@ -77,7 +77,7 @@
             <h2 class="text-center text-secondary">Découvrez nos activités </h2>
              <h3 class="text-center text-light"> Visite en petit train</h3>
             <div class="text-center">
-                <img class="rounded img-fluid" src="../images/petit train.jpg" alt="petit-train" id="petit-train"/>
+                <img class="service-image rounded img-fluid" src="../images/petit train.jpg" alt="petit-train" id="petit-train"/>
             </div>
             <p class="text-center">
                 Et profitez d'un tour panoramique en petit train pour une aventure inoubliable !
@@ -88,7 +88,7 @@
         <div class="container p-4">
              <h3 class="text-center text-light"> Visite guidée gratuite</h3>
             <div class="text-center">
-                <img class="rounded img-fluid" src="../images/guide.jpg" alt="guide" id="guide"/>
+                <img class="service-image rounded img-fluid" src="../images/guide.jpg" alt="guide" id="guide"/>
             </div>
             <p class="text-center">
                 Plongez au cœur de la nature avec notre visite guidée gratuite et découvrez les secrets fascinants de nos animaux et de leurs habitats !!
@@ -99,7 +99,7 @@
         <div class="container p-4">
              <h3 class="text-center text-light"> Restauration</h3>
             <div class="text-center">
-                <img class="rounded img-fluid" src="../images/restaurant.jpg" alt="restaurant" id="restaurant"/>
+                <img class="service-image rounded img-fluid" src="../images/restaurant.jpg" alt="restaurant" id="restaurant"/>
             </div>
             <p class="text-center">
                 Faites une Pause Gourmande au Cœur de la Savane, Une expérience gustative sauvagement délicieuse !
@@ -108,3 +108,59 @@
     </article>
 
 </section>
+
+<section class="client-reviews bg-secondary py-5">
+    <div class="container">
+        <h3 class="text-center text-dark p-4">  Découvrez les Témoignages et Expériences à Arcadia Zoo !</h3>
+        <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="review bg-primary text-white text-center p-4 rounded">
+                        <p>"Une journée magique en famille ! Les enfants ont adoré voir les lions de si près et la visite guidée était extrêmement informative. Un grand merci à tout le personnel pour leur accueil chaleureux et leur engagement envers le bien-être animal. Nous reviendrons sans aucun doute !"</p>
+                        <footer class="blockquote-footer text-white">Marie L.</footer>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="review bg-primary text-white text-center p-4 rounded">
+                        <p>"Arcadia Zoo est un véritable joyau en Bretagne ! Les habitats sont magnifiquement recréés et les animaux semblent heureux et bien soignés. Mention spéciale à la visite en petit train qui offre une perspective unique sur le parc. Une expérience incontournable pour les amoureux de la nature !"</p>
+                        <footer class="blockquote-footer text-white">Jean P.</footer>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="review bg-primary text-white text-center p-4 rounded">
+                        <p>"Nous avons passé une journée incroyable à Arcadia Zoo. La diversité des animaux et la beauté des paysages nous ont vraiment impressionnés. La restauration était excellente et nous avons particulièrement apprécié les options écologiques. Un lieu à visiter absolument !"</p>
+                        <footer class="blockquote-footer text-white">Sophie M.</footer>
+                    </div>
+                </div>
+                <!-- Add more carousel items for more reviews -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="text-center mt-4">
+            <button id="add-review-btn" class="btn btn-light">Ajouter un avis</button>
+        </div>
+        <div id="review-form" class="review-form mt-4 d-none">
+            <div class="mb-3">
+                <label for="pseudo" class="form-label">Pseudo</label>
+                <input type="text" class="form-control" id="pseudo" placeholder="Votre pseudo">
+            </div>
+            <div class="mb-3">
+                <label for="review-text" class="form-label">Votre avis</label>
+                <textarea class="form-control" id="review-text" rows="3" placeholder="Votre avis"></textarea>
+            </div>
+            <div class="text-center">
+                <button id="submit-review-btn" class="btn btn-primary">Envoyer</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
