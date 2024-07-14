@@ -190,6 +190,13 @@ p{
     width: 200px;
 }
 
+.animal-link{
+    text-decoration: none;
+}
+.animal-link:hover,
+.animal-link:focus {
+    text-decoration: underline; /* Soulignement lors du hover ou du focus */
+}
 .service-image {
     max-width: 100%;
     height: auto;
