@@ -116,7 +116,7 @@
       </article>
   </section>
   <section class="bg-secondary p-4">
-      <article class="my-4 container-animal"> 
+      <article class="my-4 container-animal" id="Ruby"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
                 <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
@@ -146,7 +146,7 @@
           
 
   <section class="bg-secondary p-4">
-      <article class="my-4 container-animal"> 
+      <article class="my-4 container-animal" id="Snowy"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
                 <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
@@ -175,7 +175,7 @@
 
   </section>
   <section class="bg-secondary p-4">
-      <article class="my-4 container-animal"> 
+      <article class="my-4 container-animal" id="Chomp"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
                 <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
@@ -204,7 +204,7 @@
 
   </section>
   <section class="bg-secondary p-4">
-      <article class="my-4 container-animal"> 
+      <article class="my-4 container-animal" id="Bucky"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
                 <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
@@ -231,7 +231,7 @@
       </article>
   </section>
   <section class="bg-secondary p-4">
-      <article class="my-4 container-animal"> 
+      <article class="my-4 container-animal" id="Splash"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
                 <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
@@ -261,7 +261,7 @@
   </section>
 
   <section class="bg-secondary p-4">
-      <article class="my-4 container-animal"> 
+      <article class="my-4 container-animal" id="Shelly"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
                 <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
@@ -290,7 +290,7 @@
 
   </section>
   <section class="bg-secondary p-4">
-      <article class="my-4 container-animal"> 
+      <article class="my-4 container-animal" id="Nath"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
                 <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
@@ -318,7 +318,7 @@
       </article>
   </section>
   <section class="bg-secondary p-4">
-      <article class="my-4 container-animal"> 
+      <article class="my-4 container-animal" id="Landy"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
                 <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
@@ -349,7 +349,7 @@
   </section>
 
   <section class="bg-secondary p-4">
-      <article class="my-4 container-animal"> 
+      <article class="my-4 container-animal" id="Sam"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
                 <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
@@ -378,7 +378,7 @@
   </section>
 
   <section class="bg-secondary p-4">
-      <article class="my-4 container-animal"> 
+      <article class="my-4 container-animal" id="Titi"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
                 <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
@@ -407,7 +407,7 @@
   </section>
 
   <section class="bg-secondary p-4">
-      <article class="my-4 container-animal"> 
+      <article class="my-4 container-animal" id="Joy"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
                 <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
@@ -1528,3 +1528,15 @@ Insectes : 50g</textarea>
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      if(window.location.hash) {
+          const hash = window.location.hash.substring(1);
+          const element = document.getElementById(hash);
+          if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+          }
+      }
+  });
+</script>
