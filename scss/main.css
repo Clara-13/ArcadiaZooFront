@@ -12141,10 +12141,10 @@ p {
   height: auto;
 }
 
-.container-services {
+.container-services, .container-habitats, .container-animal {
   position: relative;
 }
-.container-services .action-article-buttons {
+.container-services .action-article-buttons, .container-habitats .action-article-buttons, .container-animal .action-article-buttons {
   position: absolute;
   top: 0;
   left: 0;
