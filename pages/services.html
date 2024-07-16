@@ -13,8 +13,9 @@
         <article class="bg-black">
             <div class="container-services p-4">
                 <div class="action-article-buttons">
-                    <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                    <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editServiceModal"><i class="bi bi-pencil-square"></i></button>
+
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteServiceModal"><i class="bi bi-trash"></i></button>
                 </div>
                 <h3 class="text-center text-light"> Visite en petit train</h3>
                 <div class="row row-col-2 align-items-center">
@@ -32,8 +33,9 @@
         <article class="bg-secondary">
             <div class="container-services p-4">
                 <div class="action-article-buttons">
-                    <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                    <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editServiceModal"><i class="bi bi-pencil-square"></i></button>
+
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteServiceModal"><i class="bi bi-trash"></i></button>
                 </div>
                 <h3 class="text-center text-light"> Visite guidée gratuite</h3>
                 <div class="row row-col-2 align-items-center">
@@ -52,8 +54,8 @@
         <article class="bg-black">
             <div class="container-services p-4">
                 <div class="action-article-buttons">
-                    <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                    <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editServiceModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteServiceModal"><i class="bi bi-trash"></i></button>
                 </div>
                 <h3 class="text-center text-light"> Rencontre avec nos animaux</h3>
                 <div class="row row-cols-1 row-cols-md-2 align-items-center g-4">
@@ -72,8 +74,9 @@
         <article class="bg-secondary">
             <div class="container-services p-4">
                 <div class="action-article-buttons">
-                    <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                    <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editServiceModal"><i class="bi bi-pencil-square"></i></button>
+
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteServiceModal"><i class="bi bi-trash"></i></button>
                 </div>
                 <h3 class="text-center text-light">Espace de jeux pour les enfants</h3>
                 <div class="row row-cols-1 row-cols-md-3 align-items-center g-4">
@@ -96,8 +99,9 @@
         <article class="bg-black">
             <div class="container-services p-4">
                 <div class="action-article-buttons">
-                    <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                    <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editServiceModal"><i class="bi bi-pencil-square"></i></button>
+
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteServiceModal"><i class="bi bi-trash"></i></button>
                 </div>
                 <h3 class="text-center text-light">  Parking et Navette </h3>
                 <div class="row row-cols-1 row-cols-md-2 align-items-center g-4">
@@ -116,8 +120,9 @@
         <article class="bg-secondary">
             <div class="container-services p-4">
                 <div class="action-article-buttons">
-                    <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                    <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editServiceModal"><i class="bi bi-pencil-square"></i></button>
+
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteServiceModal"><i class="bi bi-trash"></i></button>
                 </div>
                 <h3 class="text-center text-light"> Station de recharge pour véhicules électriques</h3>
                 <div class="row row-col-2 align-items-center">
@@ -135,8 +140,9 @@
         <article class="bg-black">
             <div class="container-services p-4">
                 <div class="action-article-buttons">
-                    <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                    <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editServiceModal"><i class="bi bi-pencil-square"></i></button>
+
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteServiceModal"><i class="bi bi-trash"></i></button>
                 </div>
                 <h3 class="text-center text-light"> Restauration</h3>
                 <div class="row row-cols-1 row-cols-md-3 align-items-center g-4">
@@ -158,3 +164,65 @@
 
     </section>
 </div>
+
+<!-- Modale pour la modification d'un Service -->
+<div class="modal fade" id="editServiceModal" tabindex="-1" aria-labelledby="editServiceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="editServiceModalLabel"> Modification du Service</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-secondary">
+          <!-- contenu du formulaire  -->
+          <form id="editServiceForm">
+            <div class="mb-3">
+              <label for="serviceTitle" class="form-label">Titre du service</label>
+              <input type="text" class="form-control" id="serviceTitle" required>
+            </div>
+            <div class="mb-3">
+              <label for="serviceDescription" class="form-label">Description</label>
+              <textarea class="form-control" id="serviceDescription" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="serviceImage" class="form-label">Image 1</label>
+              <input type="file" class="form-control" id="serviceImage" required>
+            </div>
+            <div class="mb-3">
+                <label for="serviceImage" class="form-label">Image 2</label>
+                <input type="file" class="form-control" id="serviceImage2" required>
+            </div>
+            <div class="mb-3">
+                <label for="serviceImage" class="form-label">Image 3</label>
+                <input type="file" class="form-control" id="serviceImage3" required>
+              </div>
+            <div class="mb-3">
+              <label for="serviceAltText" class="form-label">Image Alt Text</label>
+              <input type="text" class="form-control" id="serviceAltText" required>
+            </div>
+            <button type="submit" class="btn btn-primary"> Sauvegarder</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modale pour supprimer un Service -->
+<div class="modal fade" id="deleteServiceModal" tabindex="-1" aria-labelledby="deleteServiceModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="deleteServiceModalLabel">Suppression du Service</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-secondary">
+          Etes-vous sûr de vouloir supprimer ce service ?
+        </div>
+        <div class="modal-footer bg-dark">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-danger" id="confirmDeleteService">Supprimer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
