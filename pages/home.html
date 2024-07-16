@@ -146,10 +146,11 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
         <div class="text-center mt-4">
-            <button id="add-review-btn" class="btn btn-light">Ajouter un avis</button>
+            <button id="add-review-btn" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#AddReviewModal">Ajouter un avis</button>
         </div>
+ 
+       <!--
         <div id="review-form" class="review-form mt-4 d-none">
             <div class="mb-3">
                 <label for="pseudo" class="form-label">Pseudo</label>
@@ -162,9 +163,38 @@
             <div class="text-center">
                 <button id="submit-review-btn" class="btn btn-primary">Envoyer</button>
             </div>
-        </div>
-    </div>
+        </div> -->
+    </div> 
 </section>
+
+
+<!-- Modale pour ajouter un avis -->
+<div class="modal fade" id="AddReviewModal" tabindex="-1" aria-labelledby="AddReviewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title" id="AddReviewModalLabel"> Partagez votre expérience</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-secondary">
+          <!-- contenu du formulaire --> 
+          <form id="AddReviewForm">
+            <div class="mb-3">
+              <label for="ReviewPseudo" class="form-label">Pseudo</label>
+              <input type="text" class="form-control" id="AddReviewTitle" required>
+            </div>
+            <div class="mb-3">
+              <label for="ReviewDescription" class="form-label">Votre avis</label>
+              <textarea class="form-control" id="AddReviewDescription" rows="4" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Ajouter</button>
+             </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 <!-- <script>
     document.getElementById('add-review-btn').addEventListener('click', function() {
         document.getElementById('review-form').classList.toggle('d-none');
@@ -175,7 +205,7 @@
         const reviewText = document.getElementById('review-text').value;
 
         if (pseudo && reviewText) {
-            // Vous pouvez ajouter ici le code pour envoyer l'avis au serveur
+            //  ajouter code pour envoyer l'avis au serveur
             alert('Merci pour votre avis !');
             document.getElementById('review-form').classList.add('d-none');
         } else {
