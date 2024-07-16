@@ -8,7 +8,8 @@
 <div class="bg-secondary pt-4">
     <section class="Services">
         <div class="text-center pb-4">
-            <button class="btn btn-primary"> Ajouter un service </button>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addServiceModal"> Ajouter un service
+            </button>
         </div>
         <article class="bg-black">
             <div class="container-services p-4">
@@ -189,16 +190,74 @@
               <input type="file" class="form-control" id="serviceImage" required>
             </div>
             <div class="mb-3">
+                <label for="serviceAltText" class="form-label">Image Alt Text</label>
+                <input type="text" class="form-control" id="serviceAltText" required>
+              </div>
+            <div class="mb-3">
                 <label for="serviceImage" class="form-label">Image 2</label>
                 <input type="file" class="form-control" id="serviceImage2" required>
             </div>
+            <div class="mb-3">
+                <label for="serviceAltText" class="form-label">Image Alt Text</label>
+                <input type="text" class="form-control" id="serviceAltText2" required>
+              </div>
             <div class="mb-3">
                 <label for="serviceImage" class="form-label">Image 3</label>
                 <input type="file" class="form-control" id="serviceImage3" required>
               </div>
             <div class="mb-3">
               <label for="serviceAltText" class="form-label">Image Alt Text</label>
-              <input type="text" class="form-control" id="serviceAltText" required>
+              <input type="text" class="form-control" id="serviceAltText3" required>
+            </div>
+            <button type="submit" class="btn btn-primary"> Sauvegarder</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modale pour l'ajout  d'un Service -->
+<div class="modal fade" id="addServiceModal" tabindex="-1" aria-labelledby="editServiceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="addServiceModalLabel"> Modification du Service</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-secondary">
+          <!-- contenu du formulaire  -->
+          <form id="addServiceForm">
+            <div class="mb-3">
+              <label for="serviceTitle" class="form-label">Titre du service</label>
+              <input type="text" class="form-control" id="addserviceTitle" required>
+            </div>
+            <div class="mb-3">
+              <label for="serviceDescription" class="form-label">Description</label>
+              <textarea class="form-control" id="addserviceDescription" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="serviceImage" class="form-label">Image 1</label>
+              <input type="file" class="form-control" id="addserviceImage" required>
+            </div>
+            <div class="mb-3">
+                <label for="serviceAltText" class="form-label">Image Alt Text</label>
+                <input type="text" class="form-control" id="addserviceAltText" required>
+              </div>
+            <div class="mb-3">
+                <label for="serviceImage" class="form-label">Image 2</label>
+                <input type="file" class="form-control" id="addserviceImage2" required>
+            </div>
+            <div class="mb-3">
+                <label for="serviceAltText" class="form-label">Image Alt Text</label>
+                <input type="text" class="form-control" id="addserviceAltText2" required>
+              </div>
+            <div class="mb-3">
+                <label for="serviceImage" class="form-label">Image 3</label>
+                <input type="file" class="form-control" id="addserviceImage3" required>
+              </div>
+            <div class="mb-3">
+              <label for="serviceAltText" class="form-label">Image Alt Text</label>
+              <input type="text" class="form-control" id="addserviceAltText3" required>
             </div>
             <button type="submit" class="btn btn-primary"> Sauvegarder</button>
           </form>
