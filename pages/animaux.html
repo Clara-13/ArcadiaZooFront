@@ -7,14 +7,16 @@
 </div>
 <div class="bg-secondary p-4">
   <div class="text-center">
-    <button class="btn btn-primary"> Ajouter un animal </button>
+
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addAnimalModal"> Ajouter un animal </button>
   </div>
   <section class="bg-secondary p-4">
       <article class="my-4 container-animal" id="Coco"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div>
               <div class="image-card text-white text-center mt-4">
                   <img class="rounded-circle img-fluid animal" src="../images/small-chimpanzee.jpg" alt="chimpanzé" id="chimpanzé-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalcoco"/>
@@ -41,8 +43,9 @@
       <article class="my-4 container-animal" id="Slinky"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div>
               <div class="image-card text-white text-center  mt-4">
                   <img class="rounded-circle img-fluid animal"  src="../images/anaconda.jpg" alt="image d'un anaconda vert" id="anaconda-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalSlinky"/>
@@ -67,8 +70,9 @@
       <article class="my-4 container-animal" id="Raja"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div>  
               <div class="image-card text-white text-center  mt-4">
                   <img class="rounded-circle img-fluid animal" src="../images/tigre-bengal.jpg" alt="photo d'un tigre du bengal" id="tigre-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalRaja"/>
@@ -93,8 +97,9 @@
       <article class="my-4 container-animal" id="Fitia"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div>   
               <div class="image-card text-white text-center mt-4">
                   <img class="rounded-circle img-fluid animal" src="../images/jaguar.jpg" alt="photo d'une jaguar femelle" id="jaguar-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalFitia"/>
@@ -119,8 +124,9 @@
       <article class="my-4 container-animal" id="Ruby"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div>    
               <div class="image-card text-white text-center  mt-4">
                   <img class="rounded-circle img-fluid animal" src="../images/parrots.jpg" alt="photo d'un perroquet rouge" id="perroquet-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalRuby"/>
@@ -149,8 +155,9 @@
       <article class="my-4 container-animal" id="Snowy"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div>  
               <div class="image-card text-white text-center mt-4">
                   <img class="rounded-circle img-fluid animal" src="../images/aigrette.jpg" alt="photo d'une aigrette qui vole" id="aigrette-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalSnowy"/>
@@ -178,8 +185,9 @@
       <article class="my-4 container-animal" id="Chomp"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div>  
               <div class="image-card text-white text-center  mt-4">
                   <img class="rounded-circle img-fluid animal" src="../images/alligator.jpg" alt="photo d'un alligator souriant" id="alligator-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalChomp"/>
@@ -207,8 +215,9 @@
       <article class="my-4 container-animal" id="Bucky"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div>  
               <div class="image-card text-white text-center  mt-4">
                   <img class="rounded-circle img-fluid animal" src="../images/castor.jpg" alt="photo d'un castor mignon mâchant une branche" id="castor-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalBucky"/>
@@ -234,8 +243,9 @@
       <article class="my-4 container-animal" id="Splash"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div>    
               <div class="image-card text-white text-center  mt-4">
                   <img class="rounded-circle img-fluid animal" src="../images/loutre.jpg" alt="photo d'une loutre" id="loutre-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalSplash"/>
@@ -264,8 +274,9 @@
       <article class="my-4 container-animal" id="Shelly"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div>  
               <div class="image-card text-white text-center  mt-4">
                   <img class="rounded-circle img-fluid animal" src="../images/tortue-floride.jpg" alt="photo d'une tortue de floride" id="tortue-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalShelly"/>
@@ -293,8 +304,9 @@
       <article class="my-4 container-animal" id="Nath"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div>  
               <div class="image-card text-white text-center  mt-4">
                   <img class="rounded-circle img-fluid animal" src="../images/lion.jpg" alt="photo d'un lion mâle avec sa crinière allongé" id="lion-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalNath"/>
@@ -321,8 +333,9 @@
       <article class="my-4 container-animal" id="Landy"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div>   
               <div class="image-card text-white text-center  mt-4">
                   <img class="rounded-circle img-fluid animal" src="../images/dragon-komodo.jpg" alt="photo d'un dragon de komodo" id="dragon-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalLandy"/>
@@ -352,8 +365,9 @@
       <article class="my-4 container-animal" id="Sam"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div>     
               <div class="image-card text-white text-center  mt-4">
                   <img class="rounded-circle img-fluid animal" src="../images/girafe proche.jpg" alt="photo d'une girafe mangeant les feuilles d'un arbre" id="girafe-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalSam"/>
@@ -381,8 +395,9 @@
       <article class="my-4 container-animal" id="Titi"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div>  
               <div class="image-card text-white text-center  mt-4">
                   <img class="rounded-circle img-fluid animal" src="../images/Suricate.jpg" alt="photo d'un suricate proche" id="suricate-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalTiti"/>
@@ -410,8 +425,9 @@
       <article class="my-4 container-animal" id="Joy"> 
           <div class="container bg-dark p-4 rounded-top">
               <div class="action-article-buttons">
-                <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editAnimalModal"><i class="bi bi-pencil-square"></i></button>
+
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteAnimalModal"><i class="bi bi-trash"></i></button>
               </div> 
               <div class="image-card text-white text-center  mt-4">
                   <img class="rounded-circle img-fluid animal" src="../images/zebre-habitats.jpg" alt="photo d'un zèbre de profil" id="zèbre-animal" data-bs-toggle="modal" data-bs-target="#vetReportModalJoy"/>
@@ -871,6 +887,89 @@
     </div>
   </div>
 </div>
+
+ <!-- Modale pour supprimer un animal -->
+ <div class="modal fade" id="deleteAnimalModal" tabindex="-1" aria-labelledby="deleteAnimalModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="deleteAnimalModalLabel">Suppression de l'animal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-secondary">
+        Etes-vous sûr de vouloir supprimer cet animal ?
+      </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-danger" id="confirmDeleteService">Supprimer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modale de modification pour les animaux -->
+<div class="modal fade" id="editAnimalModal" tabindex="-1" aria-labelledby="editAnimalModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="editAnimalModalLabel">Modifier l'animal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-secondary">
+        <form id="editAnimalForm">
+          <div class="mb-3">
+            <label for="animalImage" class="form-label">Ajouter une image</label>
+            <input type="file" class="form-control" id="animalImage">
+          </div>
+          <div class="mb-3">
+            <label for="animalTitle" class="form-label">Titre</label>
+            <input type="text" class="form-control" id="animalTitle">
+          </div>
+          <div class="mb-3">
+            <label for="animalDescription" class="form-label">Description</label>
+            <textarea class="form-control" id="animalDescription" rows="3"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Enregistrer les modifications</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modale pour ajouter un animal -->
+<div class="modal fade" id="addAnimalModal" tabindex="-1" aria-labelledby="addAnimalModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title" id="addAnimalModalLabel"> Ajouter un animal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-secondary">
+        <form id="addAnimalForm">
+          <div class="mb-3">
+            <label for="addanimalImage" class="form-label">Ajouter une image</label>
+            <input type="file" class="form-control" id="addanimalImage">
+          </div>
+          <div class="mb-3">
+            <label for="addanimalTitle" class="form-label">Titre</label>
+            <input type="text" class="form-control" id="addanimalTitle">
+          </div>
+          <div class="mb-3">
+            <label for="addanimalDescription" class="form-label">Description</label>
+            <textarea class="form-control" id="addanimalDescription" rows="3"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary"> Ajouter</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
