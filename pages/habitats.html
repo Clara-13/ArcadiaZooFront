@@ -13,8 +13,9 @@
             <div class="container-habitats">
                 <div class="container bg-dark p-4 rounded-top">
                     <div class="action-article-buttons">
-                        <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                        <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editHabitatModal"><i class="bi bi-pencil-square"></i></button>
+
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteHabitatModal"><i class="bi bi-trash"></i></button>
                     </div>
                     <h2 class="text-light text-center" > Tropicalia </h2>
                     <div class="row row-cols-1 row-cols-lg-3 g-4">
@@ -75,8 +76,8 @@
             <div class="container-habitats">
                 <div class="container bg-dark p-4 rounded-top">
                     <div class="action-article-buttons">
-                        <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                        <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editHabitatModal"><i class="bi bi-pencil-square"></i></button>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteHabitatModal"><i class="bi bi-trash"></i></button>
                     </div>
                     <h2 class="text-light text-center" > La Terre des Lions </h2>
                     <div class="row row-cols-1 row-cols-lg-3 g-4">
@@ -134,8 +135,8 @@
             <div class="container-habitats">
                 <div class="container bg-dark p-4 rounded-top">
                     <div class="action-article-buttons">
-                        <button  type="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-                        <button type="button" class="btn btn-outline-light"><i class="bi bi-trash"></i></button>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#editHabitatModal"><i class="bi bi-pencil-square"></i></button>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#deleteHabitatModal"><i class="bi bi-trash"></i></button>
                     </div>
                     <h2 class="text-light text-center" > L'Eden Aquatique </h2>
                     <div class="row row-cols-1 row-cols-lg-3 g-4">
@@ -188,3 +189,58 @@
         </article>
     </section>
 </div>
+
+<!-- Modal Edition Habitat -->
+<div class="modal fade" id="editHabitatModal" tabindex="-1" aria-labelledby="editHabitatModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="editHabitatModalLabel">Edition Habitat</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-secondary">
+          <form id="editHabitatForm">
+            <div class="mb-3">
+              <label for="habitatTitle" class="form-label"> Titre de l'habitat</label>
+              <input type="text" class="form-control" id="habitatTitle" required>
+            </div>
+            <div class="mb-3">
+              <label for="habitatDescription" class="form-label">Description de l'habitat</label>
+              <textarea class="form-control" id="habitatDescription" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="habitatImage" class="form-label"> Image habitat</label>
+              <input type="file" class="form-control" id="habitatImage" required>
+            </div>
+            <div class="mb-3">
+              <label for="habitatAltText" class="form-label">Image Alt Text</label>
+              <input type="text" class="form-control" id="habitatAltText" required>
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-primary">Sauvegarder</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Deleting Habitat -->
+<div class="modal fade" id="deleteHabitatModal" tabindex="-1" aria-labelledby="deleteHabitatModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="deleteHabitatModalLabel"> Suppression de l'Habitat</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-secondary">
+          Etes-vous sûr de vouloir supprimer cet habitat ?
+        </div>
+        <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteHabitat">Supprimer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
