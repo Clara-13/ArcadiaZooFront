@@ -10,6 +10,7 @@ export const allRoutes = [
     new Route("/contact", "Contact","/pages/contact.html",["disconnected"],"/js/auth/contact.js"),
     new Route("/account", "Mon Compte","/pages/auth/compte.html",["admin"]),
     new Route("/create-account", "Création de compte","/pages/auth/create-account.html", ["admin"],"/js/auth/create-account.js"),
+    new Route("/vet-report", "Rapports vétérinaire","/pages/rapport-Vet.html", ["admin"],"js/vet-report.js"),
 ];
 
 /*
