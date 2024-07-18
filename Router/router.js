@@ -21,8 +21,21 @@ const getRouteByUrl = (url) => {
   }
 };
 
+// Fonction pour afficher le loader
+const showLoader = () => {
+  document.getElementById("loader").style.display = "flex";
+};
+
+// Fonction pour masquer le loader
+const hideLoader = () => {
+  document.getElementById("loader").style.display = "none";
+};
+
+
 // Fonction pour charger le contenu de la page
 const LoadContentPage = async () => {
+  showLoader(); // Afficher le loader
+
   const path = window.location.pathname;
 
   // Récupération de l'URL actuelle
@@ -69,6 +82,9 @@ const LoadContentPage = async () => {
 
   //Afficher et masquer les éléments en fonction de rôles multiples
   showandHideElementsForMultipleRoles();
+
+
+  hideLoader(); // Masquer le loader
 };
 
 // Fonction pour gérer les événements de routage (clic sur les liens)
