@@ -12256,8 +12256,6 @@ img.tropicalia, img.terre-lion, img.eden-aquatique {
 }
 
 .vet-report {
-  background-color: #6c757d; /* bg-secondary */
-  border-radius: 10px; /* bords arrondis */
   width: 100%;
   max-width: 400px;
   margin: 10px auto;
