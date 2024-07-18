@@ -121,18 +121,30 @@
                     <div class="review bg-primary text-white text-center p-4 rounded">
                         <p>"Une journée magique en famille ! Les enfants ont adoré voir les lions de si près et la visite guidée était extrêmement informative. Un grand merci à tout le personnel pour leur accueil chaleureux et leur engagement envers le bien-être animal. Nous reviendrons sans aucun doute !"</p>
                         <footer class="blockquote-footer text-white">Marie L.</footer>
+                        <div data-show="employee" class="d-none">
+                            <button class="btn btn-success validate-review">Valider</button>
+                            <button class="btn btn-danger invalidate-review">Invalider</button>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="review bg-primary text-white text-center p-4 rounded">
                         <p>"Arcadia Zoo est un véritable joyau en Bretagne ! Les habitats sont magnifiquement recréés et les animaux semblent heureux et bien soignés. Mention spéciale à la visite en petit train qui offre une perspective unique sur le parc. Une expérience incontournable pour les amoureux de la nature !"</p>
                         <footer class="blockquote-footer text-white">Jean P.</footer>
+                        <div data-show="employee" class="d-none">
+                            <button class="btn btn-success validate-review">Valider</button>
+                            <button class="btn btn-danger invalidate-review">Invalider</button>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="review bg-primary text-white text-center p-4 rounded">
                         <p>"Nous avons passé une journée incroyable à Arcadia Zoo. La diversité des animaux et la beauté des paysages nous ont vraiment impressionnés. La restauration était excellente et nous avons particulièrement apprécié les options écologiques. Un lieu à visiter absolument !"</p>
                         <footer class="blockquote-footer text-white">Sophie M.</footer>
+                        <div data-show="employee" class="d-none">
+                            <button class="btn btn-success validate-review">Valider</button>
+                            <button class="btn btn-danger invalidate-review">Invalider</button>
+                        </div>
                     </div>
                 </div>
                 <!-- Add more carousel items for more reviews -->
@@ -149,21 +161,6 @@
         <div class="text-center mt-4">
             <button id="add-review-btn" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#AddReviewModal">Ajouter un avis</button>
         </div>
- 
-       <!--
-        <div id="review-form" class="review-form mt-4 d-none">
-            <div class="mb-3">
-                <label for="pseudo" class="form-label">Pseudo</label>
-                <input type="text" class="form-control" id="pseudo" placeholder="Votre pseudo">
-            </div>
-            <div class="mb-3">
-                <label for="review-text" class="form-label">Votre avis</label>
-                <textarea class="form-control" id="review-text" rows="3" placeholder="Votre avis"></textarea>
-            </div>
-            <div class="text-center">
-                <button id="submit-review-btn" class="btn btn-primary">Envoyer</button>
-            </div>
-        </div> -->
     </div> 
 </section>
 
@@ -171,47 +168,31 @@
 <!-- Modale pour ajouter un avis -->
 <div class="modal fade" id="AddReviewModal" tabindex="-1" aria-labelledby="AddReviewModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header bg-dark text-white">
-            <h5 class="modal-title" id="AddReviewModalLabel"> Partagez votre expérience</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body bg-secondary">
-          <!-- contenu du formulaire --> 
-          <form id="AddReviewForm">
-            <div class="mb-3">
-              <label for="ReviewPseudo" class="form-label">Pseudo</label>
-              <input type="text" class="form-control" id="AddReviewTitle" required>
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="AddReviewModalLabel"> Partagez votre expérience</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="mb-3">
-              <label for="ReviewDescription" class="form-label">Votre avis</label>
-              <textarea class="form-control" id="AddReviewDescription" rows="4" required></textarea>
+            <div class="modal-body bg-secondary">
+                <!-- contenu du formulaire -->
+                <form id="AddReviewForm">
+                    <div class="mb-3">
+                        <label for="AddReviewPseudo" class="form-label">Pseudo</label>
+                        <input type="text" class="form-control" id="AddReviewPseudo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="AddReviewDescription" class="form-label">Votre avis</label>
+                        <textarea class="form-control" id="AddReviewDescription" rows="4" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Ajouter</button>
+                    </div>
+                </form>
             </div>
-            <div class="text-center">
-                <button type="submit" class="btn btn-primary">Ajouter</button>
-             </div>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
-<!-- <script>
-    document.getElementById('add-review-btn').addEventListener('click', function() {
-        document.getElementById('review-form').classList.toggle('d-none');
-    });
+</div>
 
-    document.getElementById('submit-review-btn').addEventListener('click', function() {
-        const pseudo = document.getElementById('pseudo').value;
-        const reviewText = document.getElementById('review-text').value;
 
-        if (pseudo && reviewText) {
-            //  ajouter code pour envoyer l'avis au serveur
-            alert('Merci pour votre avis !');
-            document.getElementById('review-form').classList.add('d-none');
-        } else {
-            alert('Veuillez remplir tous les champs.');
-        }
-    });
-</script> -->
 
 
