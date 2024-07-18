@@ -14,7 +14,7 @@ function checkCredentials(){
       
         //placer ce token en cookie
 
-        setCookie(RoleCookieName, "employee", 7);
+        setCookie(RoleCookieName, "admin", 7);
         window.location.replace("/");
     }
     else{
