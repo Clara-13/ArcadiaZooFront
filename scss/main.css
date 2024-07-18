@@ -11992,6 +11992,17 @@ body {
   flex-direction: column;
 }
 
+#loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* pour qu'il soit au dessus */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main {
   flex: 1;
 }
