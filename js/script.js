@@ -143,5 +143,48 @@ function showandHideElementsForMultipleRoles() {
     });
 }
 
+document.addEventListener('DOMContentLoaded', showandHideElementsForRoles);
 
+// Écouter la soumission du formulaire de modification des horaires
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Document loaded and DOM fully constructed.');
+    const editHoursForm = document.getElementById('editHoursForm'); 
 
+    if (editHoursForm) {
+        console.log('Form found, attaching submit event listener.');
+        editHoursForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            console.log('Form submitted.');
+
+            const weekHoursStart = document.getElementById('weekHoursStart').value;
+            const weekHoursEnd = document.getElementById('weekHoursEnd').value;
+            const weekendHoursStart = document.getElementById('weekendHoursStart').value;
+            const weekendHoursEnd = document.getElementById('weekendHoursEnd').value;
+
+            console.log(`Week Hours Start: ${weekHoursStart}, Week Hours End: ${weekHoursEnd}`);
+            console.log(`Weekend Hours Start: ${weekendHoursStart}, Weekend Hours End: ${weekendHoursEnd}`);
+
+            if (weekHoursStart && weekHoursEnd && weekendHoursStart && weekendHoursEnd) {
+                document.getElementById('hoursDisplay').innerHTML = `
+                    Lundi au vendredi ${weekHoursStart}-${weekHoursEnd} <br/>
+                    Samedi et dimanche ${weekendHoursStart}-${weekendHoursEnd} <br/>
+                `;
+
+                // Fermer la modale
+                const modal = bootstrap.Modal.getInstance(document.getElementById('editHours'));
+                if (modal) {
+                    modal.hide();
+                    console.log('Modal closed.');
+                } else {
+                    console.log('Modal instance not found.');
+                }
+
+                alert('Horaires mis à jour avec succès !');
+            } else {
+                alert('Veuillez remplir tous les champs.');
+            }
+        });
+    } else {
+        console.log('Form not found, cannot attach submit event listener.');
+    }
+});
