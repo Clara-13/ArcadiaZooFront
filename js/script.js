@@ -188,3 +188,4 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Form not found, cannot attach submit event listener.');
     }
 });
+

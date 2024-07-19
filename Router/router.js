@@ -37,6 +37,7 @@ const LoadContentPage = async () => {
   showLoader(); // Afficher le loader
 
   const path = window.location.pathname;
+  const hash = window.location.hash;
 
   // Récupération de l'URL actuelle
   const actualRoute = getRouteByUrl(path);
@@ -48,12 +49,14 @@ const LoadContentPage = async () => {
     if(allRolesArray.includes("disconnected")){
       if(isConnected()){
         window.location.replace("/");
+        return;
       }
     }
     else{
       const roleUser = getRole();
       if(!allRolesArray.includes(roleUser)){
         window.location.replace("/");
+        return;
       }
     }
   }
@@ -75,7 +78,8 @@ const LoadContentPage = async () => {
   }
 
   // Changement du titre de la page
-  document.title = actualRoute.title + " - " + websiteName;
+  document.title = `${actualRoute.title} - ${websiteName}`;
+
 
   // Afficher et masquer les éléments en fonction du rôle
   showandHideElementsForRoles();
@@ -85,11 +89,19 @@ const LoadContentPage = async () => {
 
 
   hideLoader(); // Masquer le loader
+
+  // Faire défiler jusqu'à l'élément ciblé par le fragment d'URL
+  if (hash) {
+    const element = document.querySelector(hash);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 };
 
 // Fonction pour gérer les événements de routage (clic sur les liens)
 const routeEvent = (event) => {
-  event = event || window.event;
+   // objet event passé en paramètre
   event.preventDefault();
   // Mise à jour de l'URL dans l'historique du navigateur
   window.history.pushState({}, "", event.target.href);
@@ -103,3 +115,4 @@ window.onpopstate = LoadContentPage;
 window.route = routeEvent;
 // Chargement du contenu de la page au chargement initial
 LoadContentPage();
+
